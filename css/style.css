@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    /* position: relative; */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Sidebar start */
+
+.sidebar>div>i {
+    font-size: 28px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 0 0.6rem;
+    color: #fff;
+    font-weight: 600;
+    overflow-x: hidden;
+    transition: all 0.5 linear;
+    background-color: #2f4050;
+}
+
+.sidebar>div>ul>li:first-child>div>span>img {
+    border-radius: 45% 55%;
+    height: 48px;
+    max-width: 100% !important;
+}
+
+/* .nav-header {
+    padding: 33px 25px;
+    background: url(.//images/header-profile-background.png) no-repeat ;
+} */
+
+.logo {
+    height: 80px;
+    padding: 3px;
+}
+
+.profile-element>a>span>span:last-child {
+    color: #bbbbbb;
+}
+
+.menu {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu>li {
+    padding: 0.9rem;
+    margin: 8px auto;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .menu>li:nth-child(2):hover,
+.menu>li:nth-child(3):hover,
+.menu>li:nth-child(4):hover,
+.menu>li:nth-child(5):hover,
+.menu>li:nth-child(6):hover,
+.menu>li:nth-child(7):hover,
+.menu>li:nth-child(8):hover,
+.menu>li:nth-child(9):hover,
+.menu>li:nth-child(10):hover,
+.menu>li:nth-child(11):hover,
+.menu>li:nth-child(12):hover {
+    background: #000;
+} */
+
+.menu>li:not(:first-child):hover {
+    background: #8f8f8f;
+}
+
+.menu>li>div>a {
+    color: #fff;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.menu>li>a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu>li>a>i {
+    font-size: 1.2rem;
+}
+
+/* Sidebar end */
+
+.main-content {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.main-warpper>div:nth-child(2) {
+    border: 1px solid rgb(240, 237, 237);
+    margin: 10px 0px;
+}
+
+.main-warpper>div:first-child>span>span {
+    color: rgb(31, 163, 95);
+    font-weight: 600;
+}
+
+.main-warpper>div:first-child>div>span {
+    background-color: rgb(240, 2, 2);
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 11px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 13px;
+}
+
+.main-warpper>div:last-child>img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-card>div {
+    cursor: pointer;
+    background-color: #38a391;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sponsor-service>div>div>div>span,
+.discount-service>div>div>div>span {
+    color: #239fa7;
+    font-weight: 600;
+}
+
+.sponsor-service>div>div>img,
+.discount-service>div>div>img {
+    border-radius: 8px;
+}
+
+.sponsor-service>div>div,
+.discount-service>div>div {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer>span>span {
+    font-weight: 700;
+
+}
+
+/* Dashboard start */
+
+#nav-bar {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    left: 0px;
+    background-color: #239fa7;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav-bar>ul>li>a {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+#nav-bar>ul>li>a>i {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+#nav-bar>ul>li>a:hover {
+    background-color: #eee;
+    color: #239fa7;
+    border-radius: 18px;
+}
+
+#nav-bar:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+#nav-bar>ul>li:last-child>a {
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.dash-content {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background: #000;
+}
+
+.dash-wrapper>nav>div>img{
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.dash-wrapper>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
