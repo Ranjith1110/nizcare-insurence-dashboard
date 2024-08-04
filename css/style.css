@@ -151,7 +151,6 @@ ul {
 .message:hover>div {
     position: absolute;
     display: block;
-    width: 30%;
 }
 
 .message>div>div>a {
