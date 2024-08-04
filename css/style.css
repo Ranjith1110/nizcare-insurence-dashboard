@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/***** INDEX PAGE START *****/
+
+
+/* Sidebar Start */
+
+.sidebar>div>i {
+    font-size: 28px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 0 0.6rem;
+    color: #fff;
+    font-weight: 600;
+    overflow-x: hidden;
+    transition: all 0.5 linear;
+    background-color: #2f4050;
+}
+
+.sidebar>div>ul>li:first-child>div>span>img {
+    border-radius: 45% 55%;
+    height: 48px;
+    max-width: 100% !important;
+}
+
+.logo {
+    height: 80px;
+    padding: 3px;
+}
+
+.profile-element>a>span>span:last-child {
+    color: #bbbbbb;
+}
+
+.sidebar>div>ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar>div>ul>li {
+    padding: 0.9rem;
+    margin: 8px auto;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar>div>ul>li:not(:first-child):hover {
+    background: #8f8f8f;
+}
+
+.sidebar>div>ul>li>div>a {
+    color: #fff;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.sidebar>div>ul>li>a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sidebar>div>ul>li>a>i {
+    font-size: 1.2rem;
+}
+
+/* Sidebar End */
+
+
+/* MainContent Start */
+
+.main-content {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.main-warpper>div:nth-child(2) {
+    border: 1px solid rgb(240, 237, 237);
+    margin: 10px 0px;
+}
+
+.main-warpper>div:first-child>span>span {
+    color: #229ea6;
+    font-weight: 600;
+}
+
+.main-warpper>div:first-child>div>i {
+    color: #2f4050;
+}
+
+.main-warpper>div:first-child>div>a {
+    color: #2f4050;
+}
+
+.main-warpper>div:first-child>div>span {
+    background-color: rgb(240, 2, 2);
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 11px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 13px;
+}
+
+.main-warpper>div:first-child>div>div>span {
+    background-color: #229ea6;
+    /* padding: 20px 10px; */
+}
+
+.message>div {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 18px 12px;
+    border-radius: 8px;
+    right: 50px;
+    display: none;
+}
+
+.message:hover>div {
+    position: absolute;
+    display: block;
+}
+
+.message>div>div>a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2f4050;
+}
+.message>div>a>div>div>span {
+    font-size: 12px;
+    color: #2f4050;
+}
+
+.message>div>a>div>div:first-child {
+    background-color: #e5e7eb;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message>div>a>div>div:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s all ease-in-out;
+}
+
+.main-warpper>div>div:last-child>div {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 5px;
+    border-radius: 8px;
+    right: 10px;
+    /* transition: 0.3ms all ease-in-out; */
+    display: none;
+}
+
+.main-warpper>div>div:last-child:hover>div {
+    display: block;
+    position: absolute;
+}
+
+.main-warpper>div>div:last-child>div>a {
+    position: relative;
+    display: flex;
+    color: #2f4050;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 3px;
+    transition: 0.5s all ease;
+}
+
+.main-warpper>div>div:last-child>div>a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#index-banner>img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-card>div>a {
+    background-color: #e5e7eb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-card>div>a>div>i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.main-card>div:first-child>a>div>i {
+    background-color: #7b74ec;
+}
+
+.main-card>div:nth-child(2)>a>div>i {
+    background-color: #454545;
+}
+
+.main-card>div:nth-child(3)>a>div>i {
+    background-color: #e45d99;
+}
+
+.main-card>div:nth-child(4)>a>div>i {
+    background-color: #74daec;
+}
+
+.main-card>div>a>div>div>h3 {
+    font-size: 18px;
+    color: #2f4050;
+}
+
+.main-card>div>a>div>div>span {
+    font-size: 14px;
+    color: #454545;
+}
+
+.sponsor-service>div>div>a>div>span,
+.discount-service>div>div>a>div>span {
+    color: #229ea6;
+    font-weight: 600;
+}
+
+.sponsor-service>div>div>a>img,
+.discount-service>div>div>a>img {
+    border-radius: 8px;
+}
+
+.sponsor-service>div>div,
+.discount-service>div>div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer>span>span {
+    font-weight: 700;
+}
+
+/* MainContent End */
+
+
+/***** INDEX PAGE END *****/
